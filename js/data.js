@@ -1,9 +1,3 @@
-/**
- * Vietnam: A Journey Across the Clouds
- * Master Travel Itinerary Data
- * March 6–13, 2027 | Hanoi • Ha Long Bay • Sapa
- */
-
 function mapLink(name, query = '') {
   const q = encodeURIComponent(query || name);
   return `<a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener noreferrer" class="place-map-link" title="Open ${name} on Google Maps">${name}</a>`;
