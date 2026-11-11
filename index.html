@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIETNAM: Hanoi • Ha Long Bay • Sapa</title>
   
-  <!-- SEO & Social Meta -->
+  
   <meta name="description" content="Travel itinerary for Vietnam (March 6–13, 2027) featuring Hanoi Old Quarter, Ha Long Bay luxury cruise, and Sapa highlands.">
   <meta property="og:title" content="VIETNAM: Hanoi • Ha Long Bay • Sapa">
   <meta property="og:description" content="8 Days of Wonders from the Historic Old Quarter to Fansipan Peak. March 6–13, 2027.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0B0F17">
 
-  <!-- Typography: Plus Jakarta Sans & Playfair Display -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Core Styles -->
+  
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Ambient Mesh Background & Film Grain for True Glass Refraction -->
+  
   <div class="ambient-canvas" aria-hidden="true">
     <div class="ambient-orb orb-hanoi"></div>
     <div class="ambient-orb orb-halong"></div>
@@ -30,16 +30,14 @@
     <div class="ambient-grain"></div>
   </div>
 
-  <!-- ==========================================================================
-       CINEMATIC EDITORIAL HERO HEADER
-       ========================================================================== -->
+  
   <header class="hero-section" id="hero">
     <div class="hero-media-wrapper">
       <img src="images/hero-vietnam.jpg" alt="Vietnam Mountains and Ha Long Bay" class="hero-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2000&q=85';" />
       <div class="hero-overlay"></div>
     </div>
 
-    <!-- Top Navigation -->
+    
     <nav class="hero-nav">
       <div class="container hero-nav-inner">
         <a href="#hero" class="brand-title">
@@ -49,7 +47,7 @@
       </div>
     </nav>
 
-    <!-- Editorial Hero Content -->
+    
     <div class="container hero-content">
       <div class="hero-date-pill">
         <span class="pill-dot"></span>
@@ -61,7 +59,7 @@
         <em>Hanoi, Ha Long Bay, Sapa</em>
       </h1>
 
-      <!-- Action Buttons -->
+      
       <div class="hero-actions">
         <a href="#timelineSection" class="btn-primary-glow">
           <span>Explore Itinerary</span>
@@ -73,7 +71,7 @@
         </a>
       </div>
 
-      <!-- Luxury Bento Telemetry Strip -->
+      
       <div class="hero-bento-strip">
         <div class="bento-stat">
           <span class="bento-label">DURATION</span>
@@ -98,9 +96,7 @@
     </div>
   </header>
 
-  <!-- ==========================================================================
-       STICKY APPLE DYNAMIC ISLAND TRIP SELECTOR
-       ========================================================================== -->
+  
   <div class="floating-selector-container" id="stickyNavContainer">
     <div class="floating-selector-bar" role="navigation" aria-label="Trip Legs Navigation">
       <button class="selector-pill is-active" data-target="all">
@@ -119,12 +115,11 @@
         <span>Sapa</span>
         <span class="pill-badge">Stops 4, 5, 6</span>
       </button>
+      <div class="route-progress-line" id="routeProgressLine" aria-hidden="true"></div>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       SCROLL-DRIVEN S-CURVE WINDING ROUTE & STOPS
-       ========================================================================== -->
+  
   <main class="timeline-section" id="timelineSection">
     <div class="winding-route-svg-wrapper">
       <svg class="winding-route-svg" id="routeSvg" aria-hidden="true">
@@ -142,13 +137,11 @@
     </div>
 
     <div class="container" id="stopsContainer">
-      <!-- Rendered dynamically by app.js -->
+      
     </div>
   </main>
 
-  <!-- ==========================================================================
-       TRIP COUNTDOWN SECTION
-       ========================================================================== -->
+  
   <section class="countdown-section" id="countdownSection">
     <div class="container">
       <div class="countdown-wrapper">
@@ -178,9 +171,7 @@
     </div>
   </section>
 
-  <!-- ==========================================================================
-       INTERACTIVE FULL-ITINERARY MODAL
-       ========================================================================== -->
+  
   <div class="modal-backdrop" id="itineraryModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="itinerary-modal">
       <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
@@ -219,9 +210,7 @@
     </div>
   </div>
 
-  <!-- ==========================================================================
-       FULLSCREEN IMAGE LIGHTBOX VIEWER
-       ========================================================================== -->
+  
   <div class="image-lightbox-backdrop" id="imageLightboxBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close full image">✕</button>
 
@@ -244,7 +233,7 @@
     </button>
   </div>
 
-  <!-- Scripts -->
+  
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 </body>
