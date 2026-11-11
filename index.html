@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIETNAM: Hanoi • Ha Long Bay • Sapa</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Travel itinerary for Vietnam (March 6–13, 2027) featuring Hanoi Old Quarter, Ha Long Bay luxury cruise, and Sapa highlands.">
+  <meta property="og:title" content="VIETNAM: Hanoi • Ha Long Bay • Sapa">
+  <meta property="og:description" content="8 Days of Wonders from the Historic Old Quarter to Fansipan Peak. March 6–13, 2027.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0F17">
+
+  <!-- Typography: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Mesh Background & Film Grain for True Glass Refraction -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-orb orb-hanoi"></div>
+    <div class="ambient-orb orb-halong"></div>
+    <div class="ambient-orb orb-sapa"></div>
+    <div class="ambient-grain"></div>
+  </div>
+
+  <!-- ==========================================================================
+       CINEMATIC EDITORIAL HERO HEADER
+       ========================================================================== -->
+  <header class="hero-section" id="hero">
+    <div class="hero-media-wrapper">
+      <img src="images/hero-vietnam.jpg" alt="Vietnam Mountains and Ha Long Bay" class="hero-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2000&q=85';" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Top Navigation -->
+    <nav class="hero-nav">
+      <div class="container hero-nav-inner">
+        <a href="#hero" class="brand-title">
+          <span class="flag-dot"></span>
+          <span class="brand-text-main">VIETNAM</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Editorial Hero Content -->
+    <div class="container hero-content">
+      <div class="hero-date-pill">
+        <span class="pill-dot"></span>
+        <span>MARCH 6 – 13, 2027</span>
+      </div>
+
+      <h1 class="hero-title">
+        Vietnam<br>
+        <em>Hanoi, Ha Long Bay, Sapa</em>
+      </h1>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <a href="#timelineSection" class="btn-primary-glow">
+          <span>Explore Itinerary</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+        </a>
+        <a href="#countdownSection" class="btn-glass-secondary">
+          <span>Countdown</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        </a>
+      </div>
+
+      <!-- Luxury Bento Telemetry Strip -->
+      <div class="hero-bento-strip">
+        <div class="bento-stat">
+          <span class="bento-label">DURATION</span>
+          <span class="bento-value">8 Days • 7 Nights</span>
+        </div>
+        <div class="bento-divider"></div>
+        <div class="bento-stat">
+          <span class="bento-label">REGIONS</span>
+          <span class="bento-value">Hanoi • Ha Long • Sapa</span>
+        </div>
+        <div class="bento-divider"></div>
+        <div class="bento-stat">
+          <span class="bento-label">PEAK ELEVATION</span>
+          <span class="bento-value">3,143m <em>Fansipan</em></span>
+        </div>
+        <div class="bento-divider"></div>
+        <div class="bento-stat">
+          <span class="bento-label">TRANSIT</span>
+          <span class="bento-value">Cruise • Sleeper Rail • Van</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       STICKY APPLE DYNAMIC ISLAND TRIP SELECTOR
+       ========================================================================== -->
+  <div class="floating-selector-container" id="stickyNavContainer">
+    <div class="floating-selector-bar" role="navigation" aria-label="Trip Legs Navigation">
+      <button class="selector-pill is-active" data-target="all">
+        <span>All 8 Stops</span>
+        <span class="pill-badge">Full Route</span>
+      </button>
+      <button class="selector-pill" data-target="hanoi">
+        <span>Hanoi</span>
+        <span class="pill-badge">Stops 1, 3, 7, 8</span>
+      </button>
+      <button class="selector-pill" data-target="halong">
+        <span>Ha Long Bay</span>
+        <span class="pill-badge">Stop 2</span>
+      </button>
+      <button class="selector-pill" data-target="sapa">
+        <span>Sapa</span>
+        <span class="pill-badge">Stops 4, 5, 6</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SCROLL-DRIVEN S-CURVE WINDING ROUTE & STOPS
+       ========================================================================== -->
+  <main class="timeline-section" id="timelineSection">
+    <div class="winding-route-svg-wrapper">
+      <svg class="winding-route-svg" id="routeSvg" aria-hidden="true">
+        <defs>
+          <linearGradient id="routeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#E63946" />
+            <stop offset="50%" stop-color="#D4A373" />
+            <stop offset="100%" stop-color="#1D3557" />
+          </linearGradient>
+        </defs>
+        <path id="routeBgPath" class="route-bg-track" d="" />
+        <path id="routeActivePath" class="route-active-line" d="" />
+        <circle id="routeHeadMarker" class="route-head-marker" r="7" cx="0" cy="0" />
+      </svg>
+    </div>
+
+    <div class="container" id="stopsContainer">
+      <!-- Rendered dynamically by app.js -->
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       TRIP COUNTDOWN SECTION
+       ========================================================================== -->
+  <section class="countdown-section" id="countdownSection">
+    <div class="container">
+      <div class="countdown-wrapper">
+        <div class="countdown-tag">COUNTDOWN</div>
+        <h2 class="countdown-title">Vietnam Journey <em>Begins In</em></h2>
+        <p class="countdown-sub">March 6, 2027</p>
+
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <div class="countdown-number" id="cdDays">--</div>
+            <div class="countdown-unit">Days</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="cdHours">--</div>
+            <div class="countdown-unit">Hours</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="cdMins">--</div>
+            <div class="countdown-unit">Minutes</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="cdSecs">--</div>
+            <div class="countdown-unit">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE FULL-ITINERARY MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="itineraryModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="itinerary-modal">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+
+      <div class="modal-hero-cover">
+        <img id="modalHeroImg" src="" alt="Stop cover photo" />
+        <div class="modal-hero-overlay">
+          <div class="modal-meta-pills">
+            <span class="modal-badge-stop" id="modalStopBadge">STOP 1</span>
+            <span class="modal-date-text" id="modalDateText">March 6, 2027</span>
+          </div>
+          <h2 class="modal-title" id="modalTitle">Stop Title</h2>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section-title">
+          <span>📍</span>
+          <span>Curated Route & Schedule</span>
+        </div>
+
+        <div class="modal-timeline-list" id="modalScheduleList"></div>
+
+        <div class="modal-footer-nav">
+          <button class="btn-nav-modal" id="modalPrevBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            <span>Previous Day</span>
+          </button>
+          
+          <button class="btn-nav-modal" id="modalNextBtn">
+            <span>Next Day</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FULLSCREEN IMAGE LIGHTBOX VIEWER
+       ========================================================================== -->
+  <div class="image-lightbox-backdrop" id="imageLightboxBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close full image">✕</button>
+
+    <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrevBtn" aria-label="Previous photo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+
+    <div class="lightbox-container">
+      <div class="lightbox-media-wrapper">
+        <img id="lightboxMainImg" class="lightbox-img" src="" alt="Full view place photo" />
+        <div class="lightbox-caption-bar">
+          <span id="lightboxCaption">Place Name</span>
+          <span id="lightboxCounter" class="lightbox-counter">1 / 1</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNextBtn" aria-label="Next photo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
